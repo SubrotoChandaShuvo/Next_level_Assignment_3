@@ -4,6 +4,10 @@
 
 This project is a simple SQL database for a **Football Ticket Booking System**. It demonstrates basic database design, table creation, data insertion, and SQL queries using PostgreSQL.
 
+## ER Diagram
+Drivelink : https://drive.google.com/file/d/1PNo-laHw3VHZSqSRDV1BB-GmuYNtpTU8/view?usp=sharing
+
+
 ## Features
 
 * Manage users
