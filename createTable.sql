@@ -16,3 +16,19 @@ CREATE TABLE Users (
     phone_number varchar(20),
     check (role in ('Football Fan', 'Ticket Manager'))
 );
+
+
+-- 2. CREATE MATCHES TABLE
+CREATE TABLE Matches (
+    match_id int primary key,
+    fixture varchar(100) not null,
+    tournament_category varchar(50) not null,
+    base_ticket_price int not null,
+    match_status varchar(20),
+
+    check (base_ticket_price >= 0),
+
+    check (
+        match_status in ('Available', 'Selling Fast', 'Sold Out')
+    )
+);
